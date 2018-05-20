@@ -1,0 +1,177 @@
+html {
+    height: 100%;
+    width:100%;
+}
+
+body{
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  height: 100%;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  background: tomato;
+}
+
+/* etc styling */
+
+.shadow {
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu styling */
+.menu-container{
+  width: 50rem;
+  position: absolute;
+  z-index:1001;
+
+  left: 50%; /* Put position:fixed in horizontal center */
+  margin-left: -25rem; /* Negative half of width.*/
+}
+
+ul#menu{
+  text-align: center;
+  padding: 1rem;
+  margin: 0px;
+  background: #fff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+ul#menu li {
+  display: inline-block;
+  border-radius: 8px;
+}
+
+ul#menu li:hover{
+  background-color: rgb(242, 243, 244);
+}
+
+ul#menu a {
+    padding: 0.5em;
+    display: block;
+    color: hotpink;
+}
+
+ul#menu a:hover {
+    text-decoration: none;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-size: cover;
+  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-img.png");*/
+  background-repeat: no-repeat;
+}
+
+.inner-header{     
+  top: 12em;
+  position: relative;
+}
+
+h1.name{
+  color: white;
+  /*font-family: 'Work Sans', sans-serif;*/
+  /*font-family: 'Open Sans', sans-serif;*/ /* other fonts to try */
+  font-family: 'Ubuntu', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  /*font-family: 'Poppins', sans-serif;*/
+  font-weight: bold; 
+  font-size: 5em; 
+  margin-bottom: 0;
+}
+
+h2.subtitle{
+  color: hotpink;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+a.resume-button{
+  color: white;
+  font-size: 1em;
+
+  padding: 1.5rem 2rem;
+
+  border-radius: 3rem;
+  border: 3px solid;
+  transition: 0.3s;
+}
+
+
+a.resume-button:hover{
+  color: hotpink;
+  border-color: white;
+  text-decoration: none;
+  background-color: white;
+
+  transition: 0.3s;
+}
+
+/* Content styling */
+
+h1.title{
+  width: 100%;
+  padding: 2rem;
+  font-size: 2.5em;
+}
+
+/* About styling */
+
+p.about{
+  text-align: justify;
+  /*text-justify: ;*/
+}
+
+.content-outer-about{
+  width: 100%;
+  text-align: center;
+  margin: 0em;
+  padding: 8rem;
+  background-color: white;
+}
+
+.content-inner-about{
+  width: 50%;
+  margin: auto;
+}
+
+
+/* Project styling */
+
+.content-outer-project{
+  width: 100%;
+  text-align: center;
+  margin: 0em;
+  padding: 8rem;
+  background-color: grey;
+}
+
+.content-inner-project{
+  width: 50%;
+  margin: auto;
+}
+
+.project-card{
+  background: black;
+  display: inline-block; /*text-justify: ;*/
+  overflow: hidden;
+  width: 1000px;
+  height: 500px;
+}
+
+img.project-img{
+  height: 500px;
+  width: 500px;
+  /*margin: -75px 0 0 -100px;*/
+  /*display: block;*/
+}
