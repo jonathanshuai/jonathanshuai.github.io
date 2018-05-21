@@ -18,10 +18,10 @@
 
     <div class="menu-container">
         <ul id="menu" class="shadow">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Experience</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Experience</a></li>
             <li><a href="#">Skills</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -44,26 +44,98 @@
     </header>
 
     <!-- About -->
-    <div class="content-outer-about">
-        <div class="content-inner-about">
+    <div id="about" class="content about">
             <h1 class="title">About</h1>
+            <hr class="short">
             <p class="about">
-                I'm a new graduate from the University of California, San Diego with a Bachelor's in Computer Science. During my college studies, I've worked in groups of 5-10 software engineers to develop Android applications and web apps for clients. After taking a class on predictive analytics in my final quarter in college, I decided to pursue a career in data science. I'm currently taking courses in data science with Springboard Data Science, and am working on machine learning projects in Python.
+                I'm a new graduate from the University of California, San Diego with a Bachelor's in Computer Science. I love programming in Python and am very enthusiastic about data. After taking a class on predictive analytics in my final quarter in college, I decided to pursue a career in data science. I'm currently taking courses in data science with Springboard Data Science, and am working on several machine learning projects.
             </p>
-        </div>
     </div>
     <!-- /About -->
 
+    <!-- Education -->
 
+
+
+    <!-- /Education -->
     <!-- Project -->
-    <div class="content-outer-project">
-        <div class="content-inner-project">
-            <h1 class="title">Project</h1>
-            <p class="project">
-                <div class="project-card">
-                    <div style="background-image: url('../img/gun-violence.png');" class="project-img"> Projects
+    <div id="projects" class="content projects">
+        <h1 class="title">Projects</h1>
+        <hr class="short">
+
+        <div class="project-card shadow">
+            <div style="background: url('./img/gun.png');" class="project-img"></div>
+            <div class="project-text-outer">
+                <div class="project-text-inner">
+                    <h2 class="project-title">
+                        Gun Violence Trend Modeling
+                    </h2>
+                    <h2 class="project-date">
+                        2018
+                    </h2>
+                    <p class="project-text">
+                        This project explores violence trends in the United States and how various features such as income, substance abuse, gun control provisions, and other crime affect these trends. I use Python to consolidate and clean data, create visualizations, analyze trends and correlations, and make predictive models to determine which states will see an increase in gun violence. 
+                    </p>
+                    <a href="https://github.com/jonathanshuai/springboard-capstone1" class="project-link"> View Project On GitHub </a>
                 </div>
-            </p>
+            </div>
+        </div>
+
+        <div class="project-card shadow">
+            <div style="background: url('./img/flight.png')" class="project-img"></div>
+
+            <div class="project-text-outer">
+                <div class="project-text-inner">
+                    <h2 class="project-title">
+                        Flight Delay Predictions
+                    </h2>
+                    <h2 class="project-date">
+                        2017
+                    </h2>
+                    <p class="project-text">
+                        I worked with a partner to analyze flight delays as a project final for a data science course in college. We used United States flight delay information from 2015 for this project, examining trends and looking at delays for 14 airlines and 322 airports. We then implemented a predictive model to predict whether a flight would be delayed by over 15 minutes with a ~79% accuracy without any information about the weather.  
+                    </p>
+                    <a href="https://drive.google.com/file/d/1HAwG6FTjxXNYOIoB9FT0pnRUbEzYCO_J/view?usp=sharing" class="project-link"> View Summary PDF </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card shadow">
+            <div style="background: url('./img/face.gif')" class="project-img"></div>
+
+            <div class="project-text-outer">
+                <div class="project-text-inner">
+                    <h2 class="project-title">
+                        Playing With Face Recognition
+                    </h2>
+                    <h2 class="project-date">
+                        2017
+                    </h2>
+                    <p class="project-text">
+                        Simple exploration with facial recognition algorithms including preprocessing techniques, eigenfaces, and deep learning techniques. Applied facial recognition to music videos to help identify celebrities in pop groups.
+                    </p>
+                    <a href="https://github.com/jonathanshuai/face-detection-test" class="project-link"> View Project on GitHub </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card shadow">
+            <div style="background: url('./img/fapp.png')" class="project-img"></div>
+
+            <div class="project-text-outer">
+                <div class="project-text-inner">
+                    <h2 class="project-title">
+                        Food App
+                    </h2>
+                    <h2 class="project-date">
+                        2016
+                    </h2>
+                    <p class="project-text">
+                        I worked in a group of 10 peers to develop an Android social media app dedicated to food pictures. We learned and used the React Native framework over a time frame of 10 weeks. My role was to manage the database and queries. I gained valuable experience working with a group to meet deadlines in a fast paced working environment. 
+                    </p>
+                    <a href="https://github.com/Johj/fapp" class="project-link"> View Project On GitHub </a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- /Project -->
