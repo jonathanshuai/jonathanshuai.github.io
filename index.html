@@ -7,6 +7,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- Icons -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Poppins|Ubuntu|Work+Sans" rel="stylesheet">
 
@@ -21,28 +24,32 @@
 
     <div class="menu-container">
         <ul id="menu" class="shadow">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="text" href="#about">About</a></li>
+            <li><a class="text" href="#education">Education</a></li>
+            <li><a class="text" href="#projects">Projects</a></li>
+            <li><a class="text" href="#experience">Experience</a></li>
+            <li><a class="text" href="#">Skills</a></li>
+            <!-- <li><a class="text" href="#">Contact</a></li> -->
         </ul>
     </div>
 
     <header>
         <div class="inner-header">
-                <h1 class="name">
+            <h1 class="name">
                 JONATHAN SHUAI
             </h1>
             <h2 class="subtitle">
                 Computer Science
             </h2>
-
-            <a  class="resume-button" 
+            <h3 class="address">
+                Los Angeles | jonathanshuai0@gmail.com
+            </h3> 
+            <a class="resume-button" 
                 href="https://drive.google.com/open?id=1NKsV06Yyv3IZPnK8Ij6VitoFKyywOm-W">
-                Download Resume
+                View Resume
             </a>
+
+            
         </div>
     </header>
 
@@ -51,7 +58,7 @@
             <h1 class="title">About</h1>
             <hr class="short">
             <p class="about">
-                I'm a new graduate from the University of California, San Diego with a Bachelor's in Computer Science. I love programming in Python and am very enthusiastic about data. After taking a class on predictive analytics in my final quarter in college, I decided to pursue a career in data science. I'm currently taking courses in data science with Springboard Data Science, and am working on several machine learning projects.
+                I'm a new graduate from the University of California, San Diego with a Bachelor's in Computer Science. I love programming in Python and am really enthusiastic about data. After taking a class on predictive analytics in my final quarter in college, I decided to pursue a career in data science. I'm currently taking courses in data science with Springboard Data Science, and am working on several machine learning projects.
             </p>
     </div>
     <!-- /About -->
@@ -72,7 +79,7 @@
                 Data Science Bootcamp
             </h3>
             <p class="education-details">
-                Online bootcamp for data science. I'm currently taking 600+ hours of courses in machine learning algorithms, statistical analysis, visualization, and data wrangling. Furthermore, I'm working on two capstone projects where I can apply these skills in a comprehensive project and report.
+                Online bootcamp for data science. I'm currently taking 600+ hours of courses in machine learning algorithms, statistical analysis, visualization, and data wrangling. Furthermore, I'm working on two capstone projects where I apply these skills in a comprehensive project and report.
             </p>
         </div>
 
@@ -180,6 +187,40 @@
     <div id="experience" class="content experience">
         <h1 class="title">Experience</h1>
         <hr class="short">
+
+        <div class="experience-card">
+            <h2 class="experience-title">
+                Abiocode, Inc.
+            </h2>
+            <h2 class="experience-date">
+                (Summer 2016)
+            </h2>
+            <h3 class="experience-subtitle">
+                Intern (Software Engineering) 
+            </h3>
+            <ul class="experience-details"> 
+                <li>Intern as programmer at biotech firm.</li>                                                        
+                <li>Performed basic website administration tasks including monitoring and analysis, looking through audit logs configuration changes, and troubleshooting.</li>
+                <li>Developed program using Java and Selenium to search PubMed site to retrieve target e-mails and match them with scientist names, recognizing 14 external journals.</li>                                                        
+                <li>Wrote program to consolidate product inventory information spreadsheets from Abiocode website.</li>                                                        
+            </ul>
+        </div>
+        <div class="experience-card">
+            <h2 class="experience-title">
+                Global TIES, Design For Development
+            </h2>
+            <h2 class="experience-date">
+                (September 2016 - December 2017)
+            </h2>
+            <h3 class="experience-subtitle">
+                College Membership 
+            </h3>
+            <ul class="experience-details"> 
+                <li>Worked with various non-profit organizations to provide engineering solutions to meet clients' needs in an iterative process.</li>
+                <li>Worked in a group of 7 over a 10 weeks to make major improvements to a Unity game focused on teaching children in grades K-12 about healthy eating habits.</li>
+                <li>Designed a lesson plan for middle school students to teach them about environmental issues.</li>                                                        
+            </ul>
+        </div>   
     </div>
     <!-- /Experience -->
 
@@ -188,17 +229,35 @@
     <div id="skills" class="content skills">
         <h1 class="title">Skills</h1>
         <hr class="short">
+        <ul id="skills-list">
+            <li>Python</li>
+            <li>Machine Learning</li>
+            <li>Linux</li>
+            <li>MySQL</li>
+            <li>Data Analysis</li>
+            <li>Software Engineering</li>
+        </ul> 
     </div>
     <!-- /Skills -->
 
 
     <!-- Contact -->
-    <div id="contact" class="content contact">
+  <!--   <div id="contact" class="content contact">
         <h1 class="title">Contact</h1>
         <hr class="short">
-    </div>
+    </div> -->
     <!-- /Contact -->
 
-
+    <footer>
+        <p class="footer-text">
+            © 2018 Jonathan Shuai
+        </p>
+        <div class="icon-container">
+            <a class="icon" href="https://www.linkedin.com/in/jonathan-shuai-a19508126/"><i class="fa fa-linkedin"></i></a>
+            <a class="icon" href="https://github.com/jonathanshuai"><i class="fa fa-github"></i></a>
+            <a class="icon" href="https://www.facebook.com/jonathanshuai"><i class="fa fa-facebook"></i></a>
+        </div>
+    </footer>
+  
  </body>
 </html>

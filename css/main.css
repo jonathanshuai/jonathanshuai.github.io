@@ -14,12 +14,13 @@ body{
   padding: 0;
   margin: 0;
   /*background: rgb(250, 219, 216);*/
-  background: black;
+  background: white;
 }
 
-a{
+a.text{
   color: steelblue;
 }
+
 /* Misc. styling */
 .shadow {
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
@@ -27,12 +28,12 @@ a{
 
 /* Menu styling */
 .menu-container{
-  width: 700px;
+  width: 600px;
   position: absolute;
   z-index:1001;
 
   left: 50%; /* Put position:fixed in horizontal center */
-  margin-left: -350px; /* Negative half of width.*/
+  margin-left: -300px; /* Negative half of width.*/
 }
 
 ul#menu{
@@ -74,7 +75,10 @@ header {
   padding-top: 8rem;
   padding-bottom: 8rem;
   background-size: cover;
-  /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-img.png");*/
+  background: linear-gradient(217deg, rgba(70, 75, 180,.4), rgba(70, 75, 180,0) 70.71%),
+            linear-gradient(127deg, rgba(77, 130, 173,.7), rgba(77, 130, 173,0) 70.71%),
+            linear-gradient(336deg, rgba(70, 130, 180,.4), rgba(70, 130, 180,0) 70.71%);;
+
   background-repeat: no-repeat;
 }
 
@@ -97,8 +101,17 @@ h1.name{
 
 h2.subtitle{
   color: steelblue;
-  font-size: 2em;
-  margin-top: 0;
+  font-size: 2.5em;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+h3.address{
+  color: rgb(87, 98, 104);
+
+  /*color: steelblue;*/
+  font-size: 1em;
+  margin-top: 1.5rem;
   margin-bottom: 6rem;
 }
 
@@ -196,13 +209,13 @@ h2.education-date{
 
 h3.education-subtitle{
   /*font-size: 1.5rem;*/
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
 }
 
 p.education-details{
-  font-size: 12px;
-  color: rgb(86, 101, 115);
+  font-size: 14px;
+  color: rgb(75, 88, 101);
   margin-top: 1em;
   text-align: left;
 }
@@ -285,12 +298,108 @@ a.project-link{
   background-color: rgb(242, 243, 244);
 }
 
+.experience-card{
+  margin: auto;
+  margin-top: 2em;
+  max-width: 800px;
+  /*min-height: 200px;*/
+  height: auto;
+  overflow: hidden;
+  background: white;
+  padding: 2em;
+  /*border-radius: 10px; */
+}
+
+h2.experience-title{
+  float: left;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+h2.experience-date{
+  text-align: right;
+  font-size: 1em;
+  margin: 0;
+  margin-top: 4px;
+}
+
+h3.experience-subtitle{
+  /*font-size: 1.5rem;*/
+  font-size: 18px;
+  text-align: left;
+}
+
+ul.experience-details{
+  font-size: 14px;
+  color: rgb(75, 88, 101);
+  margin-top: 1em;
+  text-align: left;
+}
+
 /* Skills Styling */
 .skills{
   background-color: white;
 }
 
+ul#skills-list{
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+  background: #fff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 500px;
+}
+
+ul#skills-list li {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+
+  font-size: 2rem;
+  
+  background: rgb(242, 243, 244);
+}
+
 /* Contact styling */
 .contact{
   background-color: rgb(242, 243, 244);
+}
+
+/* footer styling */
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(242, 243, 244);
+  padding: 15px 30px 15px 30px;
+  border-top: 1px solid rgb(202, 207, 210);
+}
+
+p.footer-text{
+  float: left;
+  margin: 12px;
+}
+
+.icon-container{
+  /*background: blue;*/
+  /*float: right;*/
+  text-align: right;
+  /*padding: 15px;*/
+  /*align-content: right;*/
+}
+
+a.icon{
+ color: rgb(75, 88, 101);
+ transition: 0.3s;
+}
+
+a.icon:hover{
+  color: steelblue;
+  transition: 0.3s;
+}
+
+i {
+  font-size: 24px;
+  padding: 10px;
 }
