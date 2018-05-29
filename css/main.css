@@ -130,7 +130,6 @@ a.resume-button:hover{
   padding: 8rem;
   text-align: center;
   border-top: 1px solid rgb(202, 207, 210);
- 
 }
 
 h1.title{
@@ -279,4 +278,19 @@ a.project-link{
   .project-img {
     display: none !important;
   }
+}
+
+/* Experience styling */
+.experience{
+  background-color: rgb(242, 243, 244);
+}
+
+/* Skills Styling */
+.skills{
+  background-color: white;
+}
+
+/* Contact styling */
+.contact{
+  background-color: rgb(242, 243, 244);
 }
