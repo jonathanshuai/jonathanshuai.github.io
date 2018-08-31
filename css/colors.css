@@ -1,0 +1,15 @@
+body{
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+}
+
+#content{
+    padding: 16px;
+}
+
+p {
+  display: inline-block;
+}
+.color-container {
+    width: 80px;
+}
