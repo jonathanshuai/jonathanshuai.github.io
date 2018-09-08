@@ -75,12 +75,9 @@ header {
   margin: 0;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  background: url('../img/header.jpg');
   background-size: cover;
-  background: linear-gradient(227deg, rgba(70, 75, 180, .6), rgba(70, 75, 180, 0) 80%),
-            linear-gradient(127deg, rgba(77, 130, 173, .7), rgba(77, 130, 173, 0) 70%),
-            linear-gradient(360deg, rgba(91, 226, 191, .3), rgba(70, 130, 180, 0) 40%);;
-
-  background-repeat: no-repeat;
+  /*opacity: 0.2;*/
 }
 
 .inner-header{     
@@ -98,6 +95,7 @@ h1.name{
   font-weight: bold; 
   font-size: 5em; 
   margin-bottom: 0;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 h2.subtitle{
@@ -108,7 +106,7 @@ h2.subtitle{
 }
 
 h3.address{
-  color: rgb(106, 128, 147);
+  color: #7D90A1;
   font-weight: bold;
   /*color: steelblue;*/
   font-size: 1em;
@@ -123,6 +121,8 @@ a.resume-button{
   border-radius: 3rem;
   border: 3px solid;
   transition: 0.3s;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 
