@@ -100,7 +100,7 @@ hr.long{
 .item-card{
   margin: auto;
   margin-top: 2em;
-  max-width: 800px;
+  max-width: 900px;
   min-height: 200px;
   height: auto;
   overflow: hidden;
@@ -124,7 +124,7 @@ hr.long{
 .item-text-outer{
   display: table;
   min-height: 200px;
-  width: 500px;
+  width: 600px;
   margin: auto;
 }
 
@@ -144,6 +144,7 @@ hr.long{
 /* Styling the actual content */
 
 h1{
+  font-size: 3em;
   text-align: center;
   padding: 12px;
 }
@@ -154,16 +155,18 @@ h2 {
 }
 .item-title{
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 .item-title-kr{
   font-weight: bolder;
   margin: 0;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 p.item-text{
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: justify;
   max-width: 600px;
   margin: 1.5em auto;
