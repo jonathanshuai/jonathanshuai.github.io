@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <head>
     <title>Menu</title>
 
@@ -8,6 +9,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="./control.js"></script>
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     
@@ -15,10 +20,107 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Poppins|Ubuntu|Work+Sans" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="../css/menu.css">
 
 </head>
 <body>
-      
+
+    <div class="lead">
+        <div class="inner-lead">
+            <div class="title"> Jonathan Shuai's Restaurant Menu </div>
+            <hr class="long secondary-bgcolor shadow">
+        </div>
+    </div>
+    <div ng-app="menuApp" ng-controller="menuController">
+        <div class="content-wrapper breakfast-wrapper">
+            <h1>
+                Breakfast
+            </h1>
+            <hr class="short secondary-bgcolor">
+
+
+            <!-- Menu Item -->
+            <div ng-repeat="item in breakfast" class="item-card shadow">
+                <div style="background: url({{item.url}});" class="item-img"></div>
+                <div class="item-text-outer">
+                    <div class="item-text-inner">
+                        <h2 class="item-title secondary-color">
+                            {{item.title}}
+                        </h2>
+                        <h2 class="item-title-kr">
+                            {{item.titlekr}}
+                        </h2>
+                        <p class="item-text">
+                            {{item.description}}
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Menu Item -->
+        </div> <!-- breakfast wrapper -->
+
+
+        <div class="content-wrapper  evening-wrapper">
+            <h1>
+                Lunch / Dinner
+            </h1>
+            <hr class="short primary-bgcolor">
+
+            <!-- Menu Item -->
+            <div ng-repeat="item in evening" class="item-card shadow">
+                <div style="background: url({{item.url}});" class="item-img"></div>
+                <div class="item-text-outer">
+                    <div class="item-text-inner">
+                        <h2 class="item-title primary-color">
+                            {{item.title}}
+                        </h2>
+                        <h2 class="item-title-kr">
+                            {{item.titlekr}}
+                        </h2>
+                        <p class="item-text">
+                            {{item.description}}
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Menu Item -->
+
+        </div> <!-- evening-wrapper -->
+
+        <div class="content-wrapper dessert-wrapper">
+            <h1>
+                Desserts
+            </h1>
+            <hr class="short secondary-bgcolor">
+
+            <!-- Menu Item -->
+            <div ng-repeat="item in dessert" class="item-card shadow">
+                <div style="background: url({{item.url}});" class="item-img"></div>
+                <div class="item-text-outer">
+                    <div class="item-text-inner">
+                        <h2 class="item-title secondary-color">
+                            {{item.title}}
+                        </h2>
+                        <h2 class="item-title-kr">
+                            {{item.titlekr}}
+                        </h2>
+                        <p class="item-text">
+                            {{item.description}}
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Menu Item -->
+
+        </div> <!-- dessert wrapper -->
+
+    </div>
+
+
+
+
  </body>
 </html>
