@@ -11798,7 +11798,7 @@ Here are some examples:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./images/catalan/catalan_trees.png"></p>
+<p><img src="./images/catalan_trees.png"></p>
 
 </div>
 </div>
@@ -12011,7 +12011,7 @@ n = 3
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./images/catalan/parentheses.png"></p>
+<p><img src="./images/parentheses.png"></p>
 
 </div>
 </div>
@@ -12098,7 +12098,7 @@ generate_parentheses(4): [&#39;()()()()&#39;, &#39;()()(())&#39;, &#39;()(())()&
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='./images/catalan/grid.png'>
+<p><img src='./images/grid.png'>
 <i>Get from point A to point B.</i></p>
 
 </div>
@@ -12128,7 +12128,7 @@ DRRDRD
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='./images/catalan/restricted_grid.png'></p>
+<p><img src='./images/restricted_grid.png'></p>
 
 </div>
 </div>
@@ -12179,8 +12179,8 @@ RRRDDD, RRDRDD, RRDDRD, RDRRDD, RDRDRD
 <p>$= \frac{n}{n+1}\frac{2n}{(2n - n)! n!}$</p>
 <p>$= \frac{n}{n+1} \binom{2n}{n}$</p>
 <p>Therefore, of the $\binom{2n}{n}$ solutions to the unconstrained problem, there are $\binom{2n}{n + 1}$ solutions that violate the constraint ("bad solutions").</p>
-<p>One way to see this is by thinking about the Grid Paths problem again. We want to the number of "bad solutions". Of our $2n$ moves, instead of choosing $n$ <b>down</b> moves, we can choose $n + 1$ moves to be $n$ <b>down</b> moves followed by $1$ <b>right</b> move. By doing this, we have ensured this combination violates the constraint, as $n$ <b>down</b> moves have appeared before the $n$th <b>right</b> move.</p>
-<p>Thus, we get $\binom{2n}{n + 1}$ invalid solutions.</p>
+<p>One way to see this is by thinking about the Grid Paths problem again. We want to count the number of "bad solutions". Of our $2n$ moves, instead of choosing $n$ <b>down</b> moves, we can choose $n + 1$ moves to be $n$ <b>down</b> moves and $1$ <b>right</b> move. By choosing $n + 1$ moves to manipulate, we can get each of these combination violates the constraint, as we can arrange the moves such that $n$ <b>down</b> moves have appeared before the $n$th <b>right</b> move*.</p>
+<p>Thus, we get $\binom{2n}{n + 1}$ invalid solutions. Note that since $2n$ is even, $\binom{2n}{n + 1}$ is equal to $\binom{2n}{n - 1}$. (We can alternatively think of choosing $n - 1$ right moves.)</p>
 <p>Below, the purple represents the $n + 1$ moves we choose to violate the constraint for $n = 2$.</p>
 
 </div>
@@ -12190,7 +12190,7 @@ RRRDDD, RRDRDD, RRDDRD, RDRRDD, RDRDRD
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='./images/catalan/intuition.png'></p>
+<p><img src='./images/intuition.png'></p>
 
 </div>
 </div>
@@ -12199,8 +12199,8 @@ RRRDDD, RRDRDD, RRDDRD, RDRRDD, RDRDRD
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note that since $2n$ is even, $\binom{2n}{n + 1}$ is equal to $\binom{2n}{n - 1}$. (We can alternatively think of choosing $n - 1$ right moves.)</p>
-<p>There are many intuitions for the sequence of Catalan numbers and cool properties, and much of this information can be found on <a href="https://en.wikipedia.org/wiki/Catalan_number">Wikipedia</a>.</p>
+<p><i>*In this explanation, there are other conditions that I've made assumptions on (particularly that a unique solution can be found for each of these combinations). This assumption is justified by the reflection proof on Wikipedia!</i></p>
+<p>There are other better, more rigorous, and more interesting intuitions on <a href="https://en.wikipedia.org/wiki/Catalan_number">Wikipedia</a>. I won't reproduce them here, but many of them are quite easy to follow through, so I encourage you to look at them if you're interested!</p>
 
 </div>
 </div>
